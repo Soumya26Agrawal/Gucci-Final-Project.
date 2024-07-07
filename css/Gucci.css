@@ -1,0 +1,388 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(33, 1, 33);
+}
+
+@font-face {
+  font-family: neu;
+  src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+  font-family: thin;
+  src: url(./NeueHaasDisplayLight.ttf);
+}
+
+
+
+/* Navbar starts */
+
+.navbar-nav {
+  font-family: "Playwrite DE Grund", cursive;
+  font-weight: bolder;
+}
+
+.navbar-brand {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+}
+.navbar-brand img {
+  margin-right: 10%;
+  padding-bottom: 8%;
+  filter: contrast(10);
+}
+.navbar {
+  background-color: rgb(33, 1, 33);
+}
+
+.nav-link:hover {
+  color: rgb(33, 1, 33);
+}
+.nav-link,
+.navbar-brand {
+  color: white;
+}
+
+/* Circled Animation */
+
+
+#circleVideo{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 3%;
+  margin-top: 11%;
+}
+#circle{
+  width: 14vw;
+  height: 14vw;
+  border: solid rgb(26, 1, 9) 1px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw;
+}
+#circle #inner-circle{
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+}
+#inner-circle video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Video-bg Animation */
+
+.video-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#welcomeContent {
+  z-index: 1;
+  color: white;
+  text-align: center;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+#welcomeContent h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+#welcomeContent p {
+  font-size: 1.5em;
+}
+
+
+/* perfumes */
+
+.perfume-img {
+  width: 100%;
+  height: 400px;
+}
+
+.bestSeller-col,
+.Seasonal-col,
+.Classic-col {
+  height: 560px;
+}
+
+.bestSeller-btn,
+.Seasonal-btn,
+.Classic-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.bestSeller-btn-2,
+.Seasonal-btn-2,
+.Classic-btn-2 {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+#bestSeller-title,
+#Seasonal-title,
+#Classic-title,
+#Collection-title,
+#Accordion-title,
+#Contact-title,
+#HoverImage-title,
+#Testimonial-title {
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  margin-top: 100px;
+  background-image: url("../images/image2.jpeg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  filter: brightness(2);
+}
+
+.card-title {
+  font-family: "Playwrite DE Grund", cursive;
+  font-size: 0.9rem;
+}
+
+/* modals */
+
+.modal-img {
+  width: 50%;
+  height: 400px;
+}
+
+.Modal-body {
+  display: flex;
+  flex-direction: row;
+}
+
+#modalPara {
+  font-family: cursive;
+  background-color: rgb(237, 206, 206);
+}
+
+/* HoverImage */
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0b0701;
+  font-family: gilroy;
+}
+#elem-container {
+  overflow: hidden;
+  padding: 0vw 0vw;
+}
+.elem {
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #7f7d7d;
+  left: 0%;
+  padding: 0vw;
+}
+.content {
+  position: relative;
+  z-index: 9;
+  padding: 2.1vw 0vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.front h1 {
+  font-size: 2vw;
+  padding: 0vw 2.1vw;
+}
+.back {
+  padding: 0vw 2.1vw;
+  color: #fff;
+}
+.back h5 {
+  font-size: 0.9vw;
+  font-family: thin;
+  color: #f3eeee;
+}
+.back p {
+  opacity: 0.5;
+  font-family: thin;
+  margin-top: 2px;
+}
+.elem .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(77, 18, 45);
+  left: 0%;
+  top: -100%;
+  position: absolute;
+  transition: all ease 0.4s;
+}
+.elem:hover .overlay {
+  top: 0%;
+}
+#fixed-image {
+  height: 55vh;
+  width: 48vh;
+  background-color: rgb(229, 218, 213);
+  border-radius: 10px;
+  position: fixed;
+  top: 25%;
+  z-index: 99;
+  left: 42%;
+  display: none;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Collections */
+
+.Collection-col {
+  height: 280px;
+  margin-top: 40px;
+}
+
+.collection img {
+  width: 100%;
+  height: 260px;
+}
+
+.Collection-btn {
+  margin-top: 4%;
+}
+
+/* Accordion */
+
+.accordion-item {
+  background-color: rgb(54, 3, 54);
+  color: white;
+}
+
+.accordion-button {
+  background-color: rgb(33, 1, 33);
+  color: white;
+}
+
+/* Contact Us */
+
+#contactBox {
+  width: 40%;
+  height: 50%;
+  margin: auto;
+  margin-top: 6%;
+}
+
+input.css {
+  margin: 2.6% 0;
+  height: 40px;
+}
+
+button.css {
+  margin: 2.6% 0;
+  width: 40%;
+}
+
+textarea {
+  margin: 2.6% 0;
+}
+
+.css:hover {
+  background-color: rgb(33, 1, 33);
+  color: white;
+}
+.css:hover::placeholder {
+  color: white;
+}
+
+/* Testimonial */
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+/* Footer */
+footer {
+  margin-top: 20%;
+  background-color: white;
+  padding: 0 100px;
+}
+
+footer .d-flex li:hover {
+  scale: 1.4;
+}
+
+footer .flex-column a {
+  font-size: 1.3rem;
+}
+footer .flex-column li:hover {
+  color: rgb(33, 1, 33);
+  font-weight: bold;
+}
